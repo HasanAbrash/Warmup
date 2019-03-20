@@ -2,6 +2,9 @@
 // string string exactly n times.
 // repeatStr("hello",4) ==> 'hellohellohellohello'
 	
-	function repeatStr (n, s) {
-		//your code is here
-	}
+	function repeatStr (str, count) {
+		if (count === 0) {
+			return "";
+		}
+	return str + repeatStr(str,count - 1)
+	};
